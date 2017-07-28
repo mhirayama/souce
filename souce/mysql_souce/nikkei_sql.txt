@@ -1,0 +1,5 @@
+create table nikkei (date date,Opening_price numeric(10,2),
+High_price numeric(10,2),Low_price numeric(10,2),
+closing_price numeric(10,2));
+
+alter table nikkei convert to character set utf8;

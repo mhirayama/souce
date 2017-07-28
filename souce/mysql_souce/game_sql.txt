@@ -1,0 +1,8 @@
+create table game (id int primary key,title varchar(100),
+maker varchar(100),release01 varchar(100),model varchar(100),
+genre varchar(100),price varchar(100),sales varchar(100),
+cumulative varchar(100));
+
+alter table game convert to character set utf8;
+
+select model,count(model) from game group by model order by count(model) desc;
