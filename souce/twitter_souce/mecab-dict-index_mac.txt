@@ -1,0 +1,10 @@
+/usr/local/mecab/libexec/mecab/mecab-dict-index -d/usr/local/mecab/lib/mecab/dic/ipadic -u wiki.dic -f utf-8 -t utf-8 wiki.csv
+
+ファイルを移動するコマンド
+sudo mv wiki.dic /usr/local/mecab/lib/mecab/dic/ipadic/wiki.dic
+
+「mecabrc」ファイルを「vi」で開くためのコマンド
+sudo vi /usr/local/mecab/etc/mecabrc
+
+mecabrcに追加するパス
+userdic = /usr/local/mecab/lib/mecab/dic/ipadic/wiki.dic

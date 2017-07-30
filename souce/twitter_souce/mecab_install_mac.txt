@@ -1,0 +1,10 @@
+ディクトリを作成する
+sudo mkdir /usr/local/mecab
+
+解凍しインストールする
+cd ~/downloads
+tar xvfz mecab-0.996.tar.gz
+cd mecab-0.996
+./configure --enable-utf8-only --prefix=/usr/local/mecab
+make
+sudo make install

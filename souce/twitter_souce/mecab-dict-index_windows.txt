@@ -1,0 +1,8 @@
+ディレクトリの移動
+cd "C:\Program Files\MeCab\bin"
+
+CSVファイルをDICファイルに変換するコマンド
+mecab-dict-index.exe -d "C:\Program Files\MeCab\dic\ipadic" -u C:\data\wiki.dic -f shift-jis -t shift-jis C:\data\wiki.csv
+
+mecabrcに追加するパス
+userdic=C:\Program Files\MeCab\dic\ipadic\wiki.dic

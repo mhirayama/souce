@@ -1,0 +1,7 @@
+解凍しインストールする
+cd ~/downloads
+tar xvfz mecab-ipadic-2.7.0-20070801.tar.gz
+cd mecab-ipadic-2.7.0-20070801
+./configure --prefix=/usr/local/mecab --with-mecab-config=/usr/local/mecab/bin/mecab-config --with-charset=utf8
+make
+sudo make install
